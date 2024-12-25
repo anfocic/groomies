@@ -37,7 +37,7 @@ const Contact = () => {
                         title="Dog Grooming Salon Location"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.526425808228!2d-6.464028184230879!3d53.37284347997856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48671d04ac7e9fcf%3A0x61e8f0f71b5f7f3b!2sConfey%2C%20Co.%20Kildare%2C%20W23%20PY29%2C%20Ireland!5e0!3m2!1sen!2sus!4v1677612846540!5m2!1sen!2sus"
                         width="100%"
-                        height="300"
+                        height="301"
                         style={{border: '0'}}
                         allowFullScreen={true}
                         loading="lazy"
