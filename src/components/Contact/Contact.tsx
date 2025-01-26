@@ -1,7 +1,6 @@
 import './Contact.css';
 
 const Contact = () => {
-    // @ts-ignore
     return (
         <section className="contact">
             <div className="contact-container">
