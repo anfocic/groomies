@@ -11,7 +11,7 @@ const Footer = () => {
                     <h3>Groomies</h3>
                     <p>Your trusted partner for premium grooming services to keep your furry friends happy and healthy.</p>
                     <p><FaPhone /> (123) 456-7890</p>
-                    <p><FaEnvelope /> contact@doggroomingsalon.com</p>
+                    <p><FaEnvelope /> leixlipdoggrooming@gmail.com</p>
                 </div>
 
                 {/* Quick Links */}

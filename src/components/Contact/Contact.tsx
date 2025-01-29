@@ -1,6 +1,37 @@
-import './Contact.css';
+import {useRef} from "react";
+import emailjs from "@emailjs/browser";
+// import ReCAPTCHA from "react-google-recaptcha";
+import "./Contact.css";
 
 const Contact = () => {
+    const formRef = useRef<HTMLFormElement>(null);
+    // const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        // if (!captchaToken) {
+        //     alert("Please verify reCAPTCHA.");
+        //     return;
+        // }
+
+        if (formRef.current) {
+            emailjs
+                .sendForm("service_6kfxvcz", "template_o8lhwej", formRef.current, "1gaULBpusfQwxYlBY")
+                .then(
+                    (result) => {
+                        alert("Message sent successfully!");
+                        formRef.current?.reset();
+                        console.log(result);
+                        // setCaptchaToken(null); // Reset reCAPTCHA
+                    },
+                    (error) => {
+                        alert(error);
+                    }
+                );
+        }
+    };
+
     return (
         <section className="contact">
             <div className="contact-container">
@@ -10,14 +41,20 @@ const Contact = () => {
                 </p>
                 <div className="contact-content">
                     {/* Contact Form */}
-                    <form className="contact-form">
-                        <input type="text" placeholder="Your Name" required className="contact-input"/>
-                        <input type="email" placeholder="Your Email" required className="contact-input"/>
+                    <form ref={formRef} onSubmit={sendEmail} className="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required className="contact-input" />
+                        <input type="email" name="email" placeholder="Your Email" required className="contact-input" />
                         <textarea
+                            name="message"
                             placeholder="Your Message"
                             required
                             className="contact-textarea"
                         ></textarea>
+                        {/* reCAPTCHA */}
+                        {/*<ReCAPTCHA*/}
+                        {/*    sitekey="your_site_key"*/}
+                        {/*    onChange={(token) => setCaptchaToken(token)}*/}
+                        {/*/>*/}
                         <button type="submit" className="contact-button">Send Message</button>
                     </form>
 
@@ -25,19 +62,19 @@ const Contact = () => {
                     <div className="contact-details">
                         <h3>Contact Information</h3>
                         <p><strong>Phone:</strong> (123) 456-7890</p>
-                        <p><strong>Email:</strong> contact@doggroomingsalon.com</p>
+                        <p><strong>Email:</strong> leixlipdoggrooming@gmail.com</p>
                         <p><strong>Address:</strong> W23PY29</p>
                     </div>
                 </div>
 
-                {/* Map Placeholder */}
+                {/* Map */}
                 <div className="contact-map">
                     <iframe
                         title="Dog Grooming Salon Location"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.526425808228!2d-6.464028184230879!3d53.37284347997856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48671d04ac7e9fcf%3A0x61e8f0f71b5f7f3b!2sConfey%2C%20Co.%20Kildare%2C%20W23%20PY29%2C%20Ireland!5e0!3m2!1sen!2sus!4v1677612846540!5m2!1sen!2sus"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.526425808228!2d-6.464028184230879!3d53.37284347997856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48671d04ac7e9fcf%3A0x61e8f0f71b5f7f3b!2sConfey%2C%20Co.%20Kildare%2C%20W23%20PY29%2C%20Ireland!5e0!3m2!1sen!2sus!4v1677612846540!5m2!1sen!2us"
                         width="100%"
                         height="301"
-                        style={{border: '0'}}
+                        style={{ border: "0" }}
                         allowFullScreen={true}
                         loading="lazy"
                     ></iframe>

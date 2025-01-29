@@ -8,7 +8,7 @@ import Header from "./components/Header/Header.tsx";
 
 function App() {
     return (
-        <div>
+        <div className="app-container">
             <Header/>
             <section id="home"><Hero/></section>
             <section id="services"><Services/></section>

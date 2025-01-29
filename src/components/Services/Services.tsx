@@ -3,7 +3,7 @@ import './Services.css';
 const Services = () => {
     const services = [
         {
-            title: 'Full Grooming',
+            title: 'One-on-One Grooming',
             description: 'A complete grooming package including bath, haircut, nail trimming, and ear cleaning.',
             icon: '🛁',
         },
