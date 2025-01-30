@@ -1,6 +1,7 @@
 import '../../App.css';
 
 import { FaFacebook, FaInstagram, FaTwitter, FaPhone, FaEnvelope } from 'react-icons/fa';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -18,9 +19,10 @@ const Footer = () => {
                 <div className="footer-section footer-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#services">Our Services</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/#services">Our Services</a></li>
+                        <li><a href="/#about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <Link to="/terms" className="link">Terms & Conditions</Link>
                         <li><a href="#appointments">Book an Appointment</a></li>
                     </ul>
                 </div>

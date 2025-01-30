@@ -40,14 +40,14 @@ const Contact = () => {
                 </p>
                 <div className="contact-content">
                     <form ref={formRef} onSubmit={sendEmail} className="contact-form">
-                        <input type="text" name="name" placeholder="Your Name" required className="contact-input" />
-                        <input type="email" name="email" placeholder="Your Email" required className="contact-input" />
+                        <input type="text" name="name" placeholder="Your Name" required className="contact-input"/>
+                        <input type="email" name="email" placeholder="Your Email" required className="contact-input"/>
                         <textarea
                             name="message"
                             placeholder="Your Message"
                             required
                             className="contact-textarea"></textarea>
-                         {/*reCAPTCHA */}
+                        {/*reCAPTCHA */}
                         {/*<ReCAPTCHA*/}
                         {/*    sitekey="your_site_key"*/}
                         {/*    onChange={(token) => setCaptchaToken(token)}*/}

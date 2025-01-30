@@ -1,18 +1,26 @@
 import './index.css'
-import Contact from "./components/Contact/Contact.tsx";
-import Footer from "./components/Footer/Footer.tsx";
-import Hero from "./components/Hero/Hero.tsx";
-import About from './components/About/About.tsx';
-import Header from "./components/Header/Header.tsx";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Terms from "./pages/Terms.tsx";
+import {Home} from "./pages/Home.tsx";
+import {Layout} from "./components/Layout/Layout.tsx";
 
 function App() {
     return (
         <div className="app-container">
-            <Header/>
-            <section id="home"><Hero/></section>
-            <section id="about"><About/></section>
-            <section id="contact"><Contact/></section>
-            <Footer/>
+            <Router>
+                <Routes>
+                    <Route path="/" element={
+                        <Layout>
+                            <Home/>
+                        </Layout>
+                    }/>
+                    <Route path="/terms" element={
+                        <Layout>
+                            <Terms/>
+                        </Layout>
+                    }/>
+                </Routes>
+            </Router>
         </div>
     )
 }
