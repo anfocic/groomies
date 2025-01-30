@@ -38,7 +38,7 @@ const Footer = () => {
 
             {/* Copyright */}
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} Dog Grooming Salon. All Rights Reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Leixlip Dog Grooming. All Rights Reserved.</p>
             </div>
         </footer>
     );

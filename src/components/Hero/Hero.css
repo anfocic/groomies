@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
     padding: 2rem;
 }
 
@@ -22,12 +21,12 @@
 
 .hero-content {
     position: relative;
-    max-width: 1000px;
     z-index: 2;
+    width: 100%;
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 0.1rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
@@ -97,4 +96,58 @@
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #ff914d; /* Playful orange for accent */
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .services-container {
+        grid-template-columns: repeat(3, 1fr); /* Three services per row on larger screens */
+    }
+}
+
+.service-card {
+    background-color: var(--cream);
+    padding: 1.3rem;
+    margin: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #ff914d;
+    margin-bottom: 15px;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
 }

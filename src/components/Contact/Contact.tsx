@@ -1,6 +1,5 @@
 import {useRef} from "react";
 import emailjs from "@emailjs/browser";
-// import ReCAPTCHA from "react-google-recaptcha";
 import "./Contact.css";
 
 const Contact = () => {
@@ -9,7 +8,7 @@ const Contact = () => {
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-
+        //
         // if (!captchaToken) {
         //     alert("Please verify reCAPTCHA.");
         //     return;
@@ -40,7 +39,6 @@ const Contact = () => {
                     Have questions or want to book an appointment? We’d love to hear from you!
                 </p>
                 <div className="contact-content">
-                    {/* Contact Form */}
                     <form ref={formRef} onSubmit={sendEmail} className="contact-form">
                         <input type="text" name="name" placeholder="Your Name" required className="contact-input" />
                         <input type="email" name="email" placeholder="Your Email" required className="contact-input" />
@@ -48,9 +46,8 @@ const Contact = () => {
                             name="message"
                             placeholder="Your Message"
                             required
-                            className="contact-textarea"
-                        ></textarea>
-                        {/* reCAPTCHA */}
+                            className="contact-textarea"></textarea>
+                         {/*reCAPTCHA */}
                         {/*<ReCAPTCHA*/}
                         {/*    sitekey="your_site_key"*/}
                         {/*    onChange={(token) => setCaptchaToken(token)}*/}
@@ -58,7 +55,6 @@ const Contact = () => {
                         <button type="submit" className="contact-button">Send Message</button>
                     </form>
 
-                    {/* Business Details */}
                     <div className="contact-details">
                         <h3>Contact Information</h3>
                         <p><strong>Phone:</strong> (123) 456-7890</p>
@@ -67,7 +63,6 @@ const Contact = () => {
                     </div>
                 </div>
 
-                {/* Map */}
                 <div className="contact-map">
                     <iframe
                         title="Dog Grooming Salon Location"

@@ -1,5 +1,4 @@
 import './index.css'
-import Services from "./components/Services/Services.tsx";
 import Contact from "./components/Contact/Contact.tsx";
 import Footer from "./components/Footer/Footer.tsx";
 import Hero from "./components/Hero/Hero.tsx";
@@ -11,9 +10,7 @@ function App() {
         <div className="app-container">
             <Header/>
             <section id="home"><Hero/></section>
-            <section id="services"><Services/></section>
             <section id="about"><About/></section>
-            {/*<section id="gallery"><Gallery/></section>*/}
             <section id="contact"><Contact/></section>
             <Footer/>
         </div>
