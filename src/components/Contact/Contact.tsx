@@ -57,7 +57,7 @@ const Contact = () => {
 
                     <div className="contact-details">
                         <h3>Contact Information</h3>
-                        <p><strong>Phone:</strong> (123) 456-7890</p>
+                        <p><strong>Phone:</strong> +353 89 607 2065</p>
                         <p><strong>Email:</strong> leixlipdoggrooming@gmail.com</p>
                         <p><strong>Address:</strong> W23PY29</p>
                     </div>

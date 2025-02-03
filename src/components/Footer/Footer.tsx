@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="footer-section footer-about">
                     <h3>Groomies</h3>
                     <p>Your trusted partner for premium grooming services to keep your furry friends happy and healthy.</p>
-                    <p><FaPhone /> (123) 456-7890</p>
+                    <p><FaPhone /> +353 89 607 2065</p>
                     <p><FaEnvelope /> leixlipdoggrooming@gmail.com</p>
                 </div>
 
@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="footer-section footer-social">
                     <h3>Follow Us</h3>
                     <div className="social-icons">
-                        <a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebook /></a>
+                        <a href="https://www.facebook.com/people/Leixlip-Dog-Grooming/61572547896118/" target="_blank" rel="noreferrer"><FaFacebook /></a>
                         <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram /></a>
                         <a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter /></a>
                     </div>
