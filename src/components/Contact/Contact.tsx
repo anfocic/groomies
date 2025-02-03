@@ -16,13 +16,17 @@ const Contact = () => {
 
         if (formRef.current) {
             emailjs
-                .sendForm("service_6kfxvcz", "template_o8lhwej", formRef.current, "1gaULBpusfQwxYlBY")
+                .sendForm(
+                    process.env.REACT_APP_EMAILJS_SERVICE_ID as string,
+                    process.env.REACT_APP_EMAILJS_TEMPLATE_ID as string,
+                    formRef.current,
+                    process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+                )
                 .then(
                     (result) => {
                         alert("Message sent successfully!");
                         formRef.current?.reset();
                         console.log(result);
-                        // setCaptchaToken(null); // Reset reCAPTCHA
                     },
                     (error) => {
                         alert(error);
