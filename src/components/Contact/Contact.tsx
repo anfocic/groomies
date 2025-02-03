@@ -1,18 +1,19 @@
-import {useRef} from "react";
+import {SetStateAction, useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
     const formRef = useRef<HTMLFormElement>(null);
-    // const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+    const [captchaToken, setCaptchaToken] = useState<string | null>(null);
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        //
-        // if (!captchaToken) {
-        //     alert("Please verify reCAPTCHA.");
-        //     return;
-        // }
+
+        if (!captchaToken) {
+            alert("Please verify reCAPTCHA.");
+            return;
+        }
 
         if (formRef.current) {
             emailjs
@@ -51,11 +52,11 @@ const Contact = () => {
                             placeholder="Your Message"
                             required
                             className="contact-textarea"></textarea>
-                        {/*reCAPTCHA */}
-                        {/*<ReCAPTCHA*/}
-                        {/*    sitekey="your_site_key"*/}
-                        {/*    onChange={(token) => setCaptchaToken(token)}*/}
-                        {/*/>*/}
+                        reCAPTCHA
+                        <ReCAPTCHA
+                            sitekey="your_site_key"
+                            onChange={(token: SetStateAction<string | null>) => setCaptchaToken(token)}
+                        />
                         <button type="submit" className="contact-button">Send Message</button>
                     </form>
 
