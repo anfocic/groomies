@@ -17,6 +17,7 @@
 html, body {
   overflow-x: hidden;
   width: 100%;
+  margin: 0;
 }
 
 .app-container {
@@ -172,19 +173,12 @@ html, body {
 .footer {
   background-color: var(--dark);
   padding: 1rem;
-  margin-top: 2rem;
-  position: absolute;
-  left: 0;
   width: 100%;
 }
 
 .footer-container {
   display: flex;
   height: inherit;
-  flex-direction: column;
-  gap: 2rem;
-  width: 100%;
-  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -197,6 +191,11 @@ html, body {
 
 .footer-section {
   flex: 1;
+  text-align: center;
+}
+
+.footer-about {
+
 }
 
 .footer-about h3,
@@ -255,4 +254,21 @@ html, body {
 .link {
   text-decoration: none;
   color: white;
+}
+
+.footer-links .links-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 20px; /* Space between columns */
+  max-width: 400px; /* Optional: Adjust width */
+  margin: 0 auto; /* Center align */
+}
+
+.links-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-container li {
+  margin-bottom: 10px;
 }
