@@ -47,9 +47,6 @@ html, body {
 }
 
 .header-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ff914d;
   text-decoration: none;
 }
 
@@ -104,7 +101,6 @@ html, body {
   }
 }
 
-/* About Section Styles */
 /* About Section Styles */
 .about {
   padding: 60px 20px;
@@ -181,13 +177,12 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: none;
 }
 
 .about-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .contact-map iframe {
@@ -218,17 +213,6 @@ html, body {
 .footer-section {
   flex: 1;
   text-align: center;
-}
-
-.footer-about {
-
-}
-
-.footer-about h3,
-.footer-links h3,
-.footer-social h3 {
-  font-size: 1.5rem;
-  color: #ff914d;
 }
 
 .footer-about p,
@@ -285,16 +269,161 @@ html, body {
 .footer-links .links-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-  gap: 20px; /* Space between columns */
+  gap: 1.5rem; /* Space between columns */
   max-width: 400px; /* Optional: Adjust width */
   margin: 0 auto; /* Center align */
 }
 
 .links-container ul {
   list-style: none;
+  font-weight: bold;
+  font-size: 2rem;
   padding: 0;
 }
 
 .links-container li {
   margin-bottom: 10px;
+}
+
+/* Contact Section Styles */
+.contact {
+  padding: 3rem 1.3rem;
+  background-color: #fdf7e3; /* Soft, friendly background */
+  color: #333;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff914d;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  margin-bottom: 2.2rem;
+  color: #555;
+}
+
+.contact-content {
+  display: flex;
+  grid-template-columns: 1fr;
+  margin-bottom: 1rem;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Contact Form */
+.contact-form {
+  display: block;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 95%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  margin: 1rem;
+}
+
+.contact-textarea {
+  height: 120px;
+}
+
+.contact-button {
+  background-color: #ff914d;
+  color: #fff;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #e06c28;
+}
+
+/* Contact Details */
+.contact-details {
+  background-color: var(--primary);
+  margin-left: 1rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-details h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #ff914d;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Map */
+.contact-map iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+}
+
+.floating-label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0 5px;
+  font-size: 1rem;
+  color: #aaa;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+/* Move label up when input is focused or has a value */
+.contact-input:focus + .floating-label,
+.contact-input:not(:placeholder-shown) + .floating-label {
+  top: 5px;
+  font-size: 0.8rem;
+  color: #ff7f50;
+}
+
+.social-icon {
 }

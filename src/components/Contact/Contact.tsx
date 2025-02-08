@@ -1,7 +1,8 @@
 import {useState} from "react";
 import {useForm} from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
-import './Contact.css'
+import '../../App.css';
+import {FaFacebook, FaInstagram} from "react-icons/fa";
 
 const Contact = () => {
     const {register, reset, handleSubmit} = useForm();
@@ -35,19 +36,29 @@ const Contact = () => {
     return (
         <section className="contact">
             <div className="contact-container">
-                <h2 className="contact-title">Get in Touch</h2>
+                <h2 className="contact-title">Contact</h2>
                 <p className="contact-description">
                     Have questions or want to book an appointment? We’d love to hear from you!
                 </p>
                 <div className="contact-content">
-                    <form onSubmit={handleSubmit(handleFormSubmit)}>
-                        <input type="text" {...register("name", {required: true})} placeholder="Your Name"/>
-                        <input type="email" {...register("email", {required: true})} placeholder="Your Email"/>
-                        <textarea {...register("message", {required: true})} placeholder="Your Message"></textarea>
+                    <form className="contact-form" onSubmit={handleSubmit(handleFormSubmit)}>
+                        <input className="contact-input" type="text" {...register("name", {required: true})}
+                               placeholder="Your Name"/>
+                        <input className="contact-input" type="email" {...register("email", {required: true})}
+                               placeholder="Your Email"/>
+                        <textarea className="contact-input" {...register("message", {required: true})}
+                                  placeholder="Your Message"></textarea>
 
-                        <input type="datetime-local" {...register("datetime", {required: true})} />
-
-                        <button type="submit">Submit Form</button>
+                        <div className="input-container">
+                            <input
+                                className="contact-input"
+                                type="datetime-local"
+                                {...register("datetime", {required: true})}
+                                id="datetime"
+                            />
+                            <label htmlFor="datetime" className="floating-label">Select Date & Time</label>
+                        </div>
+                        <button className="contact-button" type="submit">Send</button>
                     </form>
 
                     <div>{result}</div>
@@ -57,6 +68,15 @@ const Contact = () => {
                         <p><strong>Phone:</strong> +353 89 607 2065</p>
                         <p><strong>Email:</strong> leixlipdoggrooming@gmail.com</p>
                         <p><strong>Address:</strong> W23PY29</p>
+                        <div className="footer-section footer-social">
+                            <h3>Follow Us</h3>
+                            <div className="social-icons">
+                                <a className="social-icon"  href="https://www.facebook.com/people/Leixlip-Dog-Grooming/61572547896118/"
+                                   target="_blank"
+                                   rel="noreferrer"><FaFacebook/></a>
+                                <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram/></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

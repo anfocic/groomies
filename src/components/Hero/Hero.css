@@ -1,21 +1,5 @@
 .hero {
-    position: relative;
-    width: 100%;
-    background: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    padding-top: 12rem;
 }
 
 .hero-content {
@@ -25,9 +9,8 @@
 }
 
 .hero-title {
-    font-size: 0.1rem;
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
 }
 
 .hero-subtitle {
@@ -36,14 +19,6 @@
     margin-bottom: 2rem;
 }
 
-/* Two Sections */
-.hero-sections {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    text-align: left;
-}
 
 /* Left Text Section */
 .hero-text {
@@ -83,18 +58,15 @@
     background: #e76b42;
 }
 
-/* Right Image Section */
-.hero-image {
-    flex: 1;
-    max-width: 50%;
-    display: flex;
-    justify-content: center;
-}
+/* Responsive Image */
+@media (max-width: 768px) {
+    .hero-image {
+        max-width: 100%;
+    }
 
-.hero-image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
+    .hero-text {
+        max-width: 100%;
+    }
 }
 
 .services-title {
@@ -102,16 +74,24 @@
     font-weight: bold;
     margin-bottom: 40px;
     color: #ff914d; /* Playful orange for accent */
+    text-align: center;
 }
 
 .services-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 4rem;
+    gap: 2rem;
     margin: 0 auto;
+    width: 90%;
 }
 
 @media (min-width: 768px) {
+    .services-container {
+        grid-template-columns: repeat(1, 1fr); /* Two services per row on tablets */
+    }
+}
+
+@media (min-width: 1024px) {
     .services-container {
         grid-template-columns: repeat(3, 1fr); /* Three services per row on larger screens */
     }
@@ -125,6 +105,7 @@
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .service-card:hover {
@@ -149,4 +130,28 @@
     font-size: 1rem;
     line-height: 1.6;
     color: #666;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+
+    .service-title {
+        font-size: 1.3rem;
+    }
+
+    .service-description {
+        font-size: 0.9rem;
+    }
 }

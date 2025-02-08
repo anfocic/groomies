@@ -1,41 +1,13 @@
 import '../../App.css';
-import { FaFacebook, FaInstagram, FaPhone, FaEnvelope } from 'react-icons/fa';
 import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-container">
-                <div className="footer-section footer-about">
-                    <h3>Leixlip Dog Grooming</h3>
-                    <p><FaPhone/> +353 89 607 2065</p>
-                    <p><FaEnvelope/> leixlipdoggrooming@gmail.com</p>
-                </div>
 
                 <div className="footer-section footer-links">
-                    <h3>Quick Links</h3>
-                    <div className="links-container">
-                        <ul>
-                            <li><a href="/#services">Our Services</a></li>
-                            <li><a href="/#about">About Us</a></li>
-                            <li><a href="/contact">Contact</a></li>
-                        </ul>
-                        <ul>
-                            <li><Link to="/terms" className="link">Terms & Conditions</Link></li>
-                            <li><a href="#appointments">Book an Appointment</a></li>
-                            <li><a href="/privacy">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                {/* Social Media */}
-                <div className="footer-section footer-social">
-                    <h3>Follow Us</h3>
-                    <div className="social-icons">
-                        <a href="https://www.facebook.com/people/Leixlip-Dog-Grooming/61572547896118/" target="_blank"
-                           rel="noreferrer"><FaFacebook/></a>
-                        <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram/></a>
-                    </div>
+                    <li><Link to="/terms" className="link">Terms & Conditions</Link></li>
                 </div>
             </div>
 
