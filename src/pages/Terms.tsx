@@ -1,7 +1,6 @@
 import {Link} from "react-router-dom";
 
 const Terms = () => {
-    console.log('henlo')
     return (
         <div className="terms-container">
             <h1>Terms & Conditions</h1>
@@ -9,8 +8,11 @@ const Terms = () => {
 
             <h2>1. Appointments and Cancellations</h2>
             <ul>
-                <li>Appointments must be booked in advance. Walk-ins are subject to availability.</li>
-                <li>A minimum of <strong>[X hours/days]</strong> notice is required to cancel or reschedule.</li>
+                <li>Appointments must be booked in advance. No walk-ins.</li>
+                <li>Cancellations or rescheduling require at least <strong>24 hours</strong> notice to avoid a <strong>50%
+                    cancellation fee</strong>.
+                </li>
+                <li>Failure to show up for an appointment will result in a <strong>50% no-show fee</strong>.</li>
             </ul>
 
             <h2>2. Health and Behavior</h2>
@@ -25,12 +27,15 @@ const Terms = () => {
             </ul>
 
             <h2>4. Accidents and Injuries</h2>
-            <p>While we take care, minor nicks or injuries can occur. In severe cases, we will notify the owner immediately.</p>
+            <p>While we take care, minor nicks or injuries can occur. In severe cases, we will notify the owner
+                immediately.</p>
 
             <h2>5. Payment & Liability</h2>
             <ul>
                 <li>Payment is due at the time of service.</li>
-                <li>The salon is not responsible for pre-existing conditions or adverse reactions to grooming products.</li>
+                <li>The salon is not responsible for pre-existing conditions or adverse reactions to grooming
+                    products.
+                </li>
             </ul>
 
             <h2>6. Photography</h2>
