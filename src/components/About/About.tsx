@@ -7,14 +7,16 @@ const About = () => {
                 <div className="about-text">
                     <h2 className="about-title">About Us</h2>
                     <p className="about-description">
-                        We are a team of passionate professionals dedicated to delivering innovative solutions for businesses of all sizes. Our mission is to empower companies by providing tools and strategies that foster growth, efficiency, and success.
+                        Welcome to [Your Salon Name], Leixlip’s friendly and caring dog grooming salon!
+                        Founded in 2025, our salon is a passion project run by my mom, who has always had a deep love for dogs.
                     </p>
                     <p className="about-description">
-                        With years of experience and a commitment to excellence, we strive to exceed expectations and create long-lasting partnerships with our clients.
+                        With years of experience and a gentle touch, she treats every pup like her own, ensuring a stress-free and enjoyable grooming experience.
+                        Whether it's a simple wash or a full grooming session, we provide top-quality care tailored to each dog's needs.
                     </p>
                 </div>
                 <div className="about-image">
-                    <img src="psi.jpeg" alt="About Us" />
+                    <img src="psi.jpeg" alt="A happy, freshly groomed dog" />
                 </div>
             </div>
         </section>
