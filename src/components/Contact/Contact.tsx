@@ -9,7 +9,7 @@ const Contact = () => {
     const [result, setResult] = useState<string | null>(null);
 
     const accessKey = import.meta.env.VITE_WEB3_ACCESS_KEY as string;
-
+    console.log(accessKey);
     const {submit} = useWeb3Forms({
         access_key: accessKey,
         settings: {
