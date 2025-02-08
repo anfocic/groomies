@@ -427,6 +427,16 @@ button:hover {
   .contact-input {
     height: 7rem;
     margin-bottom: 1rem;
+    border: 2px solid var(--primary);
+    border-radius: 0.5rem;
+  }
+
+  .contact-input::placeholder {
+    color: var(--primary);
+    position: absolute;
+    bottom: 5px;
+    font-weight: bold;
+    font-size: 2rem;
   }
 
 }
