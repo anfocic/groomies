@@ -3,13 +3,14 @@ import {useForm} from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 import '../../App.css';
 import {FaFacebook, FaInstagram} from "react-icons/fa";
+import {DateUtils} from "../dateUtils.ts";
 
 const Contact = () => {
     const {register, reset, handleSubmit} = useForm();
     const [result, setResult] = useState<string | null>(null);
 
     const accessKey = import.meta.env.VITE_WEB3_ACCESS_KEY as string;
-    console.log(accessKey);
+
     const {submit} = useWeb3Forms({
         access_key: accessKey,
         settings: {
@@ -28,7 +29,7 @@ const Contact = () => {
         submit({
             ...data,
             from_name: data.name,
-            datetime: data.datetime,
+            datetime: DateUtils.formatDateTime(data.datetime),
             message: data.message,
         });
     };
