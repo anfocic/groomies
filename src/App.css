@@ -318,7 +318,6 @@ button:hover {
   display: block;
 }
 
-.contact-input,
 .contact-textarea {
   width: 95%;
   padding: 1rem;
@@ -389,6 +388,7 @@ button:hover {
   background: transparent;
 }
 
+
 .floating-label {
   position: absolute;
   left: 12px;
@@ -423,6 +423,12 @@ button:hover {
     grid-template-columns: repeat(1, 1fr); /* One services per row on tablets */
     align-items: center;
   }
+
+  .contact-input {
+    height: 7rem;
+    margin-bottom: 1rem;
+  }
+
 }
 
 @media (min-width: 1024px) {
