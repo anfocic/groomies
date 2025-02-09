@@ -1,0 +1,135 @@
+/* Contact Section Styles */
+.contact {
+    padding: 0.1rem 1.3rem;
+    background-color: var(--cream); /* Soft, friendly background */
+    color: #333;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--coral);
+}
+
+.contact-description {
+    margin-bottom: 2.2rem;
+    color: #555;
+}
+
+.contact-content {
+    display: block;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contact-content {
+        display: block;
+    }
+}
+
+/* Contact Form */
+.contact-form {
+    display: block;
+}
+
+.contact-textarea {
+    width: 95%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    margin: 1rem;
+}
+
+.contact-textarea {
+    height: 120px;
+}
+
+.contact-button {
+    background-color: var(--coral);
+    color: var(--cream);
+    font-weight: bold;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: var(--cream);
+}
+
+/* Contact Details */
+.contact-details {
+    background-color: var(--peach);
+    padding: 1rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: block;
+}
+
+.working-hours dl {
+    display: grid;
+    color: var(--dark);
+    font-size: 16px;
+}
+
+.working-hours dt {
+    font-weight: bold;
+    color: var(--dark);
+
+}
+
+.working-hours dd {
+    margin: 0;
+
+    color: var(--dark);
+}
+
+.contact-details h3 {
+    margin-bottom: 10px;
+    color: var(--coral);
+}
+
+.contact-details p {
+    margin-bottom: 5px;
+    color: var(--dark);
+}
+
+.follow-us {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.follow-us a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: var(--dark);
+    transition: 0.3s;
+}
+
+.follow-us a:hover {
+    color: #ff3300;
+}
+
+@media (max-width: 600px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

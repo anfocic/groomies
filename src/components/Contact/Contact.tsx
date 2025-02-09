@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {useForm} from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
-import '../../App.css';
+import './Contact.css';
 import {FaFacebook, FaInstagram} from "react-icons/fa";
 import {DateUtils} from "../dateUtils.ts";
 
@@ -61,22 +61,29 @@ const Contact = () => {
                         </div>
                         <button className="contact-button" type="submit">Send</button>
                     </form>
-
                     <div>{result}</div>
 
                     <div className="contact-details">
-                        <h3>Contact Information</h3>
-                        <p><strong>Phone:</strong> +353 89 607 2065</p>
-                        <p><strong>Email:</strong> leixlipdoggrooming@gmail.com</p>
-                        <p><strong>Address:</strong> W23PY29</p>
-                        <div className="footer-section footer-social">
+                        <div className="contact-information">
+                            <h3>Contact Information</h3>
+                            <p><strong>Phone:</strong> +353 89 607 2065</p>
+                            <p><strong>Email:</strong> leixlipdoggrooming@gmail.com</p>
+                            <p><strong>Address:</strong> W23PY29</p>
+                        </div>
+                        <div className="working-hours">
+                            <h3>Working Hours</h3>
+                            <dl>
+                                <dt>Monday - Friday:</dt>
+                                <dd>09:30 - 17:30</dd>
+                            </dl>
+                        </div>
+
+                        <div className="follow-us">
                             <h3>Follow Us</h3>
-                            <div className="social-icons">
-                                <a className="social-icon"  href="https://www.facebook.com/people/Leixlip-Dog-Grooming/61572547896118/"
-                                   target="_blank"
-                                   rel="noreferrer"><FaFacebook/></a>
-                                <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram/></a>
-                            </div>
+                            <a href="https://www.facebook.com/people/Leixlip-Dog-Grooming/61572547896118/"
+                               target="_blank"
+                               rel="noreferrer"><FaFacebook/></a>
+                            <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram/></a>
                         </div>
                     </div>
                 </div>

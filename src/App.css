@@ -99,6 +99,10 @@ button:hover {
     text-align: left;
   }
 }
+.row {
+  justify-content: space-between;
+  display: flex;
+}
 
 .footer-section {
   flex: 1;
@@ -168,101 +172,6 @@ button:hover {
 
 .links-container li {
   margin-bottom: 10px;
-}
-
-/* Contact Section Styles */
-.contact {
-  padding: 0.1rem 1.3rem;
-  background-color: var(--cream); /* Soft, friendly background */
-  color: #333;
-  text-align: center;
-}
-
-.contact-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.contact-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #ff914d;
-}
-
-.contact-description {
-  margin-bottom: 2.2rem;
-  color: #555;
-}
-
-.contact-content {
-  display: block;
-  grid-template-columns: 1fr;
-  margin-bottom: 1rem;
-  gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .contact-content {
-    display: block;
-  }
-}
-
-/* Contact Form */
-.contact-form {
-  display: block;
-}
-
-.contact-textarea {
-  width: 95%;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #333;
-  margin: 1rem;
-}
-
-.contact-textarea {
-  height: 120px;
-}
-
-.contact-button {
-  background-color: #ff914d;
-  color: #fff;
-  font-weight: bold;
-  width: 100%;
-  height: 3rem;
-  height: 3rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.contact-button:hover {
-  background-color: #e06c28;
-}
-
-/* Contact Details */
-.contact-details {
-  background-color: var(--peach);
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 0.6rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.contact-details h3 {
-  margin-bottom: 10px;
-  color: #ff914d;
-}
-
-.contact-details p {
-  margin-bottom: 5px;
-  color: #555;
 }
 
 /* Map */
