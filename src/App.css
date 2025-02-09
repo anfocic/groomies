@@ -75,60 +75,6 @@ button:hover {
   background-color: #d66b55;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5rem;
-  background-color: var(--dark);
-  color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  font-size: calc(10px + 2vmin);
-}
-
-.header-container {
-  display: flex;
-  height: inherit;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-}
-
-
-.header-menu {
-  list-style: none;
-}
-
-.header-button {
-  text-decoration: none;
-  background-color: var(--cream);
-  color: var(--dark);
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.header-button:hover {
-  background-color: #e06c28;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .header-menu {
-    flex-direction: row;
-    gap: 10px;
-  }
-}
-
 .contact-map iframe {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -408,6 +354,7 @@ button:hover {
   background-color: var(--peach);
   padding: 1.3rem;
   margin: 1rem;
+  display: block;
   border-radius: 10px;
   width: inherit;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

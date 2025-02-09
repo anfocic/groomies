@@ -61,7 +61,7 @@ const About = () => {
     return (
         <>
             <Helmet>
-                <title>Professional Dog Grooming Services | Your Business Name</title>
+                <title>Professional Dog Grooming Services | Leixlip Dog Grooming</title>
                 <meta name="description"
                       content="Get the best dog grooming services, including baths, brushing, and de-shedding treatments. Your pet deserves the best care!"/>
                 <meta name="keywords" content="dog grooming, pet grooming, de-shedding, bath, brushing, nail trimming"/>
