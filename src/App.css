@@ -129,56 +129,6 @@ button:hover {
   }
 }
 
-/* About Section Styles */
-.about {
-  padding: 4rem 1.2rem;
-  background-color: var(--cream);
-  color: #333;
-}
-
-.about-container {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  display: flex;
-}
-
-@media (min-width: 768px) {
-  .about {
-  }
-
-  .about-container {
-    display: block;
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-.about-button {
-  background-color: #ff9800;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  display: inline-block;
-  margin-top: 15px;
-}
-
-.about-button:hover {
-  background-color: #e68900;
-}
-
-.about-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-image img {
-  max-width: 100%;
-  height: auto;
-}
-
 .contact-map iframe {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -299,7 +249,7 @@ button:hover {
 }
 
 .contact-content {
-  display: flex;
+  display: block;
   grid-template-columns: 1fr;
   margin-bottom: 1rem;
   gap: 2rem;
