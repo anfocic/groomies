@@ -66,8 +66,11 @@ const Contact = () => {
                     <div className="contact-details">
                         <div className="contact-info">
                             <h3>Contact Information</h3>
-                            <p><strong><FaPhone/></strong> +353 89 607 2065</p>
-                            <p><strong><FaEnvelope/></strong> leixlipdoggrooming@gmail.com</p>
+                            <p><strong><FaPhone/></strong>
+                                <a href="tel:+353896072065"> +353 89 607 2065</a></p>
+                            <p><strong><FaEnvelope/></strong>
+                                <a href="mailto:leixlipdoggrooming@gmail.com"> leixlipdoggrooming@gmail.com</a>
+                            </p>
                             <p>
                                 <strong><FaLocationArrow/></strong>
                                 <a href="https://www.google.com/maps/search/?api=1&query=W23PY29"
