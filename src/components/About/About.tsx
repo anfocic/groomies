@@ -23,7 +23,7 @@ const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Leixlip Dog Grooming",
-    "image": "https://www.leixlip-dog-grooming.com/img.png",
+    "image": "https://www.leixlip-dog-grooming.com/logo.png",
     "@id": "https://www.leixlip-dog-grooming.com/",
     "url": "https://www.leixlip-dog-grooming.com/",
     "telephone": "+353 89 607 2065",
@@ -61,7 +61,7 @@ const About = () => {
     return (
         <>
             <Helmet>
-                <title>Professional Dog Grooming Services | Leixlip Dog Grooming</title>
+                <title>Leixlip Dog Grooming | Professional Dog Grooming Services </title>
                 <meta name="description"
                       content="Get the best dog grooming services, including baths, brushing, and de-shedding treatments. Your pet deserves the best care!"/>
                 <meta name="keywords" content="dog grooming, pet grooming, de-shedding, bath, brushing, nail trimming"/>
@@ -72,7 +72,7 @@ const About = () => {
             <section className="about">
                 <div className="about-container">
                     <div className="about-image">
-                        <img src="img.png" alt="A happy, freshly groomed dog" loading="lazy"/>
+                        <img src="logo.png" alt="A happy, freshly groomed dog" loading="lazy"/>
                     </div>
                     <div className="services-container">
                         {services.map((service, index) => (
