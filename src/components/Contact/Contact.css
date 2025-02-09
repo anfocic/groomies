@@ -19,7 +19,7 @@
 
 .contact-description {
     margin-bottom: 2.2rem;
-    color: #555;
+    color: var(--dark);
 }
 
 .contact-content {
@@ -56,7 +56,7 @@
 
 .contact-button {
     background-color: var(--coral);
-    color: var(--cream);
+    color: var(--dark);
     font-weight: bold;
     width: 100%;
     height: 3rem;
@@ -69,7 +69,8 @@
 }
 
 .contact-button:hover {
-    background-color: var(--cream);
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 /* Contact Details */
@@ -126,7 +127,7 @@
 }
 
 .contact-info a {
-    color: var(--coral); /* Change to match your theme */
+    color: var(--dark);
     text-decoration: none;
     font-weight: bold;
     margin-left: 1rem;

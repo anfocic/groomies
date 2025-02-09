@@ -1,10 +1,10 @@
 :root {
   /* 🎨 Primary Colors */
   --coral: #E27C65;
-  --peach: #f1be97;
+  --peach: #f9af77;
   --sage: #C4C7A9;
   --brown: #4B3430;
-  --cream: #f4efdc;
+  --cream: #fefaec;
 
   /* 🖌️ Semantic Colors */
   --primary: var(--coral);

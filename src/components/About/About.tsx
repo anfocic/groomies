@@ -72,8 +72,10 @@ const About = () => {
             <section className="about">
                 <div className="about-container">
                     <div className="about-image">
-                        <img src="logo.png" alt="A happy, freshly groomed dog" loading="lazy"/>
+                        <img src="logo2.webp" alt="A happy, freshly groomed dog" loading="lazy"/>
                     </div>
+                    <h2 className="contact-title">Services</h2>
+
                     <div className="services-container">
                         {services.map((service, index) => (
                             <article className="service-card" key={index}>
