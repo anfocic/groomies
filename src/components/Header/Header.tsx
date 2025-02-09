@@ -5,7 +5,7 @@ const Header = () => {
         <header className="header">
             <div className="header-container">
                 <a href="/" className="header-logo">
-                    <img src="img_4.png" alt="Logo"/>
+                    <img src="title.webp" alt="title"/>
                 </a>
                 {/*<nav className="header-nav">*/}
                 {/*<ul className="header-menu">*/}
