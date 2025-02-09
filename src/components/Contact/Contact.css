@@ -96,7 +96,6 @@
 
 .working-hours dd {
     margin: 0;
-
     color: var(--dark);
 }
 
@@ -124,6 +123,21 @@
 
 .follow-us a:hover {
     color: #ff3300;
+}
+
+.contact-info a {
+    color: var(--coral); /* Change to match your theme */
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.contact-info p {
+    margin-left: 1rem;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 600px) {

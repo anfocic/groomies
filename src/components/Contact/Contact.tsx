@@ -2,7 +2,7 @@ import {useState} from "react";
 import {useForm} from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 import './Contact.css';
-import {FaFacebook, FaInstagram} from "react-icons/fa";
+import {FaEnvelope, FaFacebook, FaInstagram, FaLocationArrow, FaPhone} from "react-icons/fa";
 import {DateUtils} from "../dateUtils.ts";
 
 const Contact = () => {
@@ -64,11 +64,18 @@ const Contact = () => {
                     <div>{result}</div>
 
                     <div className="contact-details">
-                        <div className="contact-information">
+                        <div className="contact-info">
                             <h3>Contact Information</h3>
-                            <p><strong>Phone:</strong> +353 89 607 2065</p>
-                            <p><strong>Email:</strong> leixlipdoggrooming@gmail.com</p>
-                            <p><strong>Address:</strong> W23PY29</p>
+                            <p><strong><FaPhone/></strong> +353 89 607 2065</p>
+                            <p><strong><FaEnvelope/></strong> leixlipdoggrooming@gmail.com</p>
+                            <p>
+                                <strong><FaLocationArrow/></strong>
+                                <a href="https://www.google.com/maps/search/?api=1&query=W23PY29"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    W23PY29
+                                </a>
+                            </p>
                         </div>
                         <div className="working-hours">
                             <h3>Working Hours</h3>
