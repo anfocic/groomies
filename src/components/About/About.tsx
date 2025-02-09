@@ -72,13 +72,14 @@ const About = () => {
             <section className="about">
                 <div className="about-container">
                     <div className="about-image">
-                        <img src="img.png" alt="A happy, freshly groomed dog" loading="lazy" />
+                        <img src="img.png" alt="A happy, freshly groomed dog" loading="lazy"/>
                     </div>
                     <div className="services-container">
                         {services.map((service, index) => (
                             <article className="service-card" key={index}>
                                 <div className="service-icon">{service.icon}</div>
                                 <h2 className="service-title">{service.title}</h2>
+
                                 <p className="service-description">{service.description}</p>
                             </article>
                         ))}
