@@ -49,7 +49,7 @@
 .service-description {
     line-height: 1.6;
     font-size: 1.2rem;
-    color: #666;
+    color: var(--dark);
 }
 
 .service-icon {
