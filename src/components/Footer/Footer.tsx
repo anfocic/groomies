@@ -4,10 +4,8 @@ import {Link} from "react-router-dom";
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="footer-container">
-                <div className="footer-section footer-links">
-                    <li><Link to="/terms" className="link">Terms & Conditions</Link></li>
-                </div>
+            <div className="footer-section">
+                <li><Link to="/terms" className="link">Terms & Conditions</Link></li>
             </div>
 
             <div className="footer-bottom">
