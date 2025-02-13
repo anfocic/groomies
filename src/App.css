@@ -187,12 +187,6 @@ p, button, input, textarea {
 
 }
 
-@media (min-width: 1024px) {
-  .services-container {
-    grid-template-columns: repeat(3, 1fr); /* Three services per row on larger screens */
-  }
-}
-
 .terms-container {
   width: 100%;
   padding: 2rem;

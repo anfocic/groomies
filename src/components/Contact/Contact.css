@@ -1,7 +1,6 @@
-/* Contact Section Styles */
 .contact {
     padding: 0.1rem 1.3rem;
-    background-color: var(--cream); /* Soft, friendly background */
+    background-color: var(--cream);
     color: #333;
     text-align: center;
 }
