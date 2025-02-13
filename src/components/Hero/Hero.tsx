@@ -79,7 +79,9 @@ const Hero = () => {
                     </div>
                     <div className="hero-image">
                         <img src="leixlip-dog-grooming-logo.webp"
-                             alt="Leixlip Dog Grooming logo featuring two happy Pomeranians" loading="lazy"/>
+                             width="300"
+                             height="299"
+                             alt="Leixlip Dog Grooming logo featuring two happy Pomeranians"/>
                     </div>
                 </div>
             </header>
