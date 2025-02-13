@@ -1,5 +1,6 @@
 .hero {
     background: var(--cream);
+    display: block;
 }
 
 .hero-content {
@@ -8,7 +9,7 @@
 
 .hero-container {
     display: flex;
-    padding-top: 1rem;
+    padding-top: 3rem;
 }
 
 .hero-title {
@@ -23,6 +24,11 @@
 .hero-subtitle {
     font-size: 1.2rem;
     color: var(--dark);
+}
+
+.cta-section {
+    color: var(--dark);
+    text-align: center;
 }
 
 .cta-button {
@@ -43,11 +49,14 @@
 .services-container {
     background-color: var(--light);
     height: inherit;
+    padding-top: 4rem;
 }
+
 
 .service-card {
     background-color: var(--peach);
     margin: 1rem;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
