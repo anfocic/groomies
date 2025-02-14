@@ -1,3 +1,4 @@
+/* Mobile */
 .contact {
     padding: 0.1rem 1.3rem;
     background-color: var(--cream);
@@ -23,34 +24,34 @@
 
 .contact-content {
     display: block;
-    grid-template-columns: 1fr;
     margin-bottom: 1rem;
     gap: 2rem;
 }
 
-@media (min-width: 768px) {
-    .contact-content {
-        display: block;
-    }
-}
-
-/* Contact Form */
 .contact-form {
     display: block;
+    width: 100%; /* Full width on mobile */
+}
+
+.contact-input {
+    width: 95%;
+    padding: 12px;
+    border: 2px solid var(--peach);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
 }
 
 .contact-textarea {
     width: 95%;
+    height: 120px;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #fff;
     color: #333;
-    margin: 1rem;
-}
-
-.contact-textarea {
-    height: 120px;
+    margin: 1rem 0;
 }
 
 .contact-button {
@@ -72,10 +73,10 @@
     color: var(--light);
 }
 
-/* Contact Details */
 .contact-details {
     background-color: var(--peach);
     padding: 1rem;
+    width: 100%; /* Full width on mobile */
     border-radius: 0.6rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -91,7 +92,6 @@
 .working-hours dt {
     font-weight: bold;
     color: var(--dark);
-
 }
 
 .working-hours dd {
@@ -140,10 +140,57 @@
     text-decoration: underline;
 }
 
+
+/* 🔹 Tablet */
+@media (min-width: 768px) {
+    .contact-input {
+        height: 7rem;
+        margin-bottom: 1rem;
+        border: 2px solid var(--primary);
+        border-radius: 0.5rem;
+    }
+
+    .contact-input::placeholder {
+        color: var(--dark);
+        font-weight: bold;
+        font-size: 2rem;
+        font-style: italic;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+
+    .contact-details {
+        width: 50%;
+    }
+}
+
+/* 🔹 Small Screen */
 @media (max-width: 600px) {
     .contact-details {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        width: 100%;
+    }
+}
+
+/* 🔹 Desktop */
+@media (min-width: 1024px) {
+    .contact-content {
+        display: flex;
+    }
+
+    .contact-input {
+        width: 95%;
+        padding: 12px;
+        border: 3px solid var(--peach);
+        margin-bottom: 1rem;
+        max-height: 3rem;
+        font-weight: bold;
+        outline: none;
+        background: transparent;
     }
 }
