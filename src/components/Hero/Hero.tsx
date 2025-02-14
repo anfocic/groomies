@@ -72,20 +72,25 @@ const Hero = () => {
             <header className="hero">
                 <div className="hero-container">
                     <div className="hero-content">
-                        <h1 className="hero-title">Welcome to Leixlip Dog Grooming</h1>
+                        <div className="hero-header">  {/* New wrapper for title & logo */}
+                            <h1 className="hero-title">
+                                Welcome to<br/> Leixlip Dog Grooming
+                            </h1>
+                            <div className="hero-image">
+                                <img src="leixlip-dog-grooming-logo.webp"
+                                     width="300"
+                                     height="299"
+                                     alt="Leixlip Dog Grooming logo featuring two happy Pomeranians"/>
+                            </div>
+                        </div>
+                        <div className="cta-section">
+                            <p className="hero-subtitle">
+                                Pampering your pets with love and care.<br/>
+                                Book an appointment today!
+                            </p>
+                            <a href="#contact" className="cta-button" aria-label="Book an Appointment">Book Now</a>
+                        </div>
                     </div>
-                    <div className="hero-image">
-                        <img src="leixlip-dog-grooming-logo.webp"
-                             width="300"
-                             height="299"
-                             alt="Leixlip Dog Grooming logo featuring two happy Pomeranians"/>
-                    </div>
-                </div>
-                <div className="cta-section">
-                    <p className="hero-subtitle">Pampering your pets with love and care. Book an appointment
-                        today!</p>
-                    <a href="#contact" className="cta-button" aria-label="Book an Appointment">Book Now</a>
-
                 </div>
             </header>
 

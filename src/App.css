@@ -141,6 +141,14 @@ p, button, input, textarea {
   background: transparent;
 }
 
+.contact-input::placeholder {
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 1rem;
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+}
+
 .floating-label {
   position: absolute;
   left: 12px;
@@ -180,9 +188,11 @@ p, button, input, textarea {
   }
 
   .contact-input::placeholder {
-    color: var(--primary);
+    color: var(--dark);
     font-weight: bold;
     font-size: 2rem;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
   }
 
 }
