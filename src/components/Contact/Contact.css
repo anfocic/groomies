@@ -30,7 +30,7 @@
 
 .contact-form {
     display: block;
-    width: 100%; /* Full width on mobile */
+    width: 100%;
 }
 
 .contact-input {
@@ -75,7 +75,7 @@
 
 .contact-details {
     background-color: var(--peach);
-    padding: 1rem;
+    padding: 0.1rem 0;
     width: 100%; /* Full width on mobile */
     border-radius: 0.6rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -167,7 +167,7 @@
     }
 }
 
-/* 🔹 Small Screen */
+/* Small Screen */
 @media (max-width: 600px) {
     .contact-details {
         flex-direction: column;
@@ -177,7 +177,7 @@
     }
 }
 
-/* 🔹 Desktop */
+/* Desktop */
 @media (min-width: 1024px) {
     .contact-content {
         display: flex;
