@@ -6,10 +6,10 @@ A responsive, mobile-first website for Leixlip Dog Grooming, designed to showcas
 
 🎨 Features
 
-✅ Responsive Design – Optimized for both desktop and mobile.
-✅ Accessibility – Uses semantic HTML and ARIA labels.
-✅ Fast Performance – Built with best practices for speed and SEO.
-✅ Modern UI – Styled with CSS and designed for user-friendliness.
+✅ Responsive Design – Optimized for both desktop and mobile.     
+✅ Accessibility – Uses semantic HTML and ARIA labels.      
+✅ Fast Performance – Built with best practices for speed and SEO.     
+✅ Modern UI – Styled with CSS and designed for user-friendliness.    
 
 🚀 Live Demo
 
