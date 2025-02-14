@@ -83,7 +83,7 @@ const Contact = () => {
                         <div className="working-hours">
                             <h3>Working Hours</h3>
                             <dl>
-                                <dt>Monday - Friday:</dt>
+                                <dt>Monday - Friday</dt>
                                 <dd>09:30 - 17:30</dd>
                             </dl>
                         </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                             <a href="https://www.facebook.com/people/Leixlip-Dog-Grooming/61572547896118/"
                                target="_blank"
                                rel="noreferrer"><FaFacebook/></a>
-                            <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram/></a>
+                            <a href="https://www.instagram.com/leixlipdoggrooming/" target="_blank" rel="noreferrer"><FaInstagram/></a>
                         </div>
                     </div>
                 </div>
