@@ -55,8 +55,8 @@ const Hero = () => {
                 <div className="hero-container">
                     <div className="hero-content">
                         <div className="hero-header">
-                            <h1 className="hero-title">
-                                Welcome to<br/> Leixlip Dog Grooming
+                            <h1>
+                                Welcome to Leixlip Dog Grooming
                             </h1>
                             <div className="hero-image">
                                 <img src="leixlip-dog-grooming-logo.webp"
