@@ -52,7 +52,7 @@
 
 @media (min-width: 1024px) {
     .services-container {
-        padding-top: 3rem;
+        padding-top: 12rem;
         grid-template-columns: repeat(3, 1fr);
     }
 
