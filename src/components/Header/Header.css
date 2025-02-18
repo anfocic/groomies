@@ -33,17 +33,20 @@
 
 .cta {
     display: inline-block;
-    background: var(--coral);
-    color: var(--cream);
-    padding: 1rem;
+    background: var(--peach);
+    color: var(--dark);
+    padding: 0.5rem;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
-.cta-button:hover {
-
+.cta:hover {
+    background: var(--light);
+    color: var(--dark);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hamburger-menu {

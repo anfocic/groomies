@@ -16,10 +16,11 @@ const Header = () => {
     return (
         <header className="header">
             <a href="/" className="header-logo">
-                <img src="title.webp"
-                     height="300"
-                     width="300"
-                     alt="Logo"/>
+                <picture>
+                    <source srcSet="title.avif" type="image/avif"/>
+                    <source srcSet="title.webp" type="image/webp"/>
+                    <img src="title.webp" height="300" width="300" alt="Logo"/>
+                </picture>
             </a>
             <nav className="nav-links">
                 <a href="/" className="nav-link">Home</a>
@@ -42,7 +43,7 @@ const Header = () => {
                 </div>
 
                 <ul className="header-menu">
-                <li><a href="/#home" className="sidebar-link" onClick={closeMenu}>Home</a></li>
+                    <li><a href="/#home" className="sidebar-link" onClick={closeMenu}>Home</a></li>
                     <li><a href="/#services" className="sidebar-link" onClick={closeMenu}>Services</a></li>
                     <li><a href="/#contact" className="sidebar-link" onClick={closeMenu}>Contact</a></li>
                     {/*<li><a href="/blog" className="sidebar-link" onClick={closeMenu}>Blog</a></li>*/}
