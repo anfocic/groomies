@@ -5,8 +5,8 @@ import {Services} from "../components/Services/Services.tsx";
 export const Home = () => {
     return (
         <div>
-            <section id="about"><Hero/></section>
-            <section id="about"><Services/></section>
+            <section id="home"><Hero/></section>
+            <section id="services"><Services/></section>
             <section id="contact"><Contact/></section>
         </div>
     )
