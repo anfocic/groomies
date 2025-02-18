@@ -16,7 +16,10 @@ const Header = () => {
     return (
         <header className="header">
             <a href="/" className="header-logo">
-                <img src="title.webp" alt="Logo"/>
+                <img src="title.webp"
+                     height="300"
+                     width="300"
+                     alt="Logo"/>
             </a>
             <nav className="nav-links">
                 <a href="/" className="nav-link">Home</a>
@@ -32,7 +35,10 @@ const Header = () => {
 
             <div className={`sidebar-menu ${menuOpen ? "open" : ""}`}>
                 <div className="sidebar-logo">
-                    <img src="sidebar.webp" alt="Logo"/>
+                    <img src="sidebar.webp"
+                         height="300"
+                         width="300"
+                         alt="Logo"/>
                 </div>
 
                 <ul className="header-menu">
