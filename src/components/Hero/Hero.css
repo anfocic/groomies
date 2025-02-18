@@ -60,7 +60,6 @@
 }
 
 .hero-image img {
-    width: 30rem !important;
 }
 
 /* Mobile */
@@ -100,7 +99,7 @@
 @media (min-width: 768px) {
     .hero-container {
         flex-direction: row;
-        padding-top: 5rem;
+        padding-top: 2rem;
         justify-content: space-between;
         text-align: left;
     }
