@@ -54,14 +54,14 @@ const Header = () => {
                     <a className="social-link"
                        href="https://www.facebook.com/people/Leixlip-Dog-Grooming/61572547896118/"
                        target="_blank"
+                       aria-label="Visit our Facebook profile"
                        rel="noreferrer"><FaFacebook/></a>
                     <a href="https://www.instagram.com/leixlipdoggrooming/"
                        className="social-link"
                        target="_blank"
+                       aria-label="Visit our Instagram profile"
                        rel="noreferrer"><FaInstagram/></a>
                 </div>
-
-
             </div>
 
             {menuOpen && <div className="backdrop show" onClick={closeMenu}></div>}
