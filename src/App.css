@@ -171,7 +171,6 @@ p, button, input, textarea {
     transform: translateY(-50%);
     background: white;
     padding: 0 5px;
-    color: var(--dark);
     transition: 0.3s;
     pointer-events: none;
 }
@@ -179,7 +178,7 @@ p, button, input, textarea {
 .contact-input:focus + .floating-label,
 .contact-input:not(:placeholder-shown) + .floating-label {
     top: 5px;
-    color: #ff7f50;
+    color: var(--dark);
 }
 
 @media (max-width: 480px) {
