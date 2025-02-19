@@ -127,6 +127,10 @@ p, button, input, textarea {
     color: var(--cream);
 }
 
+.link:hover {
+    text-decoration: underline;
+}
+
 .footer-links .links-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
