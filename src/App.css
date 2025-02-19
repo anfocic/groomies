@@ -124,7 +124,7 @@ p, button, input, textarea {
 
 .link {
     text-decoration: none;
-    color: #b8563a;
+    color: var(--cream);
 }
 
 .footer-links .links-container {
