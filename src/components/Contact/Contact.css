@@ -14,7 +14,7 @@
 .contact-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: var(--coral);
+    color: #cc5c47;
 }
 
 .contact-description {
@@ -55,8 +55,8 @@
 }
 
 .contact-button {
-    background-color: var(--coral);
-    color: var(--dark);
+    background-color: #2e1f1c;
+    color: #b8563a;
     font-weight: bold;
     width: 100%;
     height: 3rem;
@@ -101,7 +101,7 @@
 
 .contact-details h3 {
     margin-bottom: 10px;
-    color: var(--coral);
+    color: #b8563a;
 }
 
 .contact-details p {
