@@ -55,7 +55,7 @@ const Hero = () => {
                 <div className="hero-container">
                     <div className="hero-content">
                         <div className="hero-header">
-                            <h1>
+                            <h1 style={{color: '#4B3430'}}>
                                 Welcome to Leixlip Dog Grooming
                             </h1>
                             <div className="hero-image">
