@@ -1,39 +1,32 @@
 :root {
-    /* 🎨 Primary Colors */
     --coral: #E27C65;
     --peach: #f9af77;
     --sage: #C4C7A9;
     --brown: #4B3430;
     --cream: #fefaec;
 
-    /* 🖌️ Semantic Colors */
     --primary: var(--coral);
     --secondary: var(--peach);
     --accent: var(--sage);
     --dark: var(--brown);
     --light: var(--cream);
 
-    /* 🌍 Base Font Settings */
-    font-size: 16px; /* Default desktop font size */
+    font-size: 16px;
     --main-font: 'Poppins', sans-serif;
 }
 
-/* 🔹 Make Fonts Responsive */
 @media (max-width: 768px) {
-    /* Tablets & Mobile */
     :root {
         font-size: 15px;
     }
 }
 
 @media (max-width: 480px) {
-    /* Small Phones */
     :root {
         font-size: 14px;
     }
 }
 
-/* 🔹 Global Styles */
 html, body {
     overflow-x: hidden;
     width: 100%;
@@ -44,7 +37,6 @@ html, body {
     color: #333;
 }
 
-/* 📝 Responsive Typography */
 h1 {
     font-size: clamp(2rem, 5vw, 2.5rem);
 }
@@ -61,34 +53,16 @@ p, button, input, textarea {
     font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-.contact-map {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    margin-bottom: 1rem;
-    overflow: hidden;
-}
-
-.contact-map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .footer {
     background-color: var(--dark);
-    padding: 1rem;
     list-style: none;
-    font-size: clamp(1.5rem, 4vw, 1.5rem);
+    position: absolute;
     width: 100%;
+    font-size: clamp(1.5rem, 4vw, 1.5rem);
 }
 
 .footer-container {
     display: flex;
-    height: inherit;
 }
 
 @media (min-width: 768px) {
@@ -106,6 +80,7 @@ p, button, input, textarea {
 
 .footer-section {
     flex: 1;
+    list-style: none;
     text-align: center;
 }
 
@@ -115,9 +90,7 @@ p, button, input, textarea {
 
 .footer-bottom {
     text-align: center;
-    margin-top: 30px;
     border-top: 1px solid #555;
-    padding-top: 20px;
     font-size: 0.9rem;
     color: var(--cream);
 }
@@ -135,39 +108,13 @@ p, button, input, textarea {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    max-width: 400px;
     margin: 0 auto;
-}
-
-.contact-map iframe {
-    border-radius: 10px;
-    margin-top: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .input-container {
     position: relative;
     width: 100%;
 }
-
-.contact-input {
-    width: 95%;
-    padding: 12px;
-    border: 2px solid var(--peach);
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    outline: none;
-    background: transparent;
-}
-
-.contact-input::placeholder {
-    color: var(--dark);
-    font-weight: bold;
-    font-size: 1rem;
-    font-style: italic;
-    font-family: 'Poppins', sans-serif;
-}
-
 .floating-label {
     position: absolute;
     left: 12px;
@@ -177,12 +124,6 @@ p, button, input, textarea {
     padding: 0 5px;
     transition: 0.3s;
     pointer-events: none;
-}
-
-.contact-input:focus + .floating-label,
-.contact-input:not(:placeholder-shown) + .floating-label {
-    top: 5px;
-    color: var(--dark);
 }
 
 @media (max-width: 480px) {

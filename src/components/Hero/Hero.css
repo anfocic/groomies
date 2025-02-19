@@ -3,7 +3,6 @@
     display: flex; /* Align content horizontally */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-    padding: 3rem 0; /* More spacing for larger screens */
 }
 
 .hero-content {

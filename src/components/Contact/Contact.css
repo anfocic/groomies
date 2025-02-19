@@ -43,6 +43,19 @@
     background: transparent;
 }
 
+.contact-input::placeholder {
+    color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.contact-input:focus + .floating-label,
+.contact-input:not(:placeholder-shown) + .floating-label {
+    top: 5px;
+    color: var(--dark);
+}
+
+
 .contact-textarea {
     width: 95%;
     height: 120px;
@@ -152,9 +165,7 @@
 
     .contact-input::placeholder {
         color: var(--dark);
-        font-weight: bold;
-        font-size: 2rem;
-        font-style: italic;
+        font-size: 1.5rem;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -189,8 +200,8 @@
         border: 3px solid var(--peach);
         margin-bottom: 1rem;
         max-height: 3rem;
-        font-weight: bold;
         outline: none;
+        font-style: italic;
         background: transparent;
     }
 }
