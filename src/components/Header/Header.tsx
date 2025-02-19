@@ -23,7 +23,7 @@ const Header = () => {
                 </picture>
             </a>
             <nav className="nav-links">
-                <a href="/" className="nav-link">Home</a>
+                <a href="/#" className="nav-link">Home</a>
                 <a href="/#services" className="nav-link">Services</a>
                 {/*<Link to="/blog" className="nav-link">Blog</Link>*/}
                 <a href="/#contact" className="cta" aria-label="Book an Appointment">Book Now</a>

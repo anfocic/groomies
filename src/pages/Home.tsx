@@ -1,6 +1,6 @@
 import {lazy, Suspense} from "react";
+import Hero from "../components/Hero/Hero.tsx";
 
-const Hero = lazy(() => import("../components/Hero/Hero.tsx"));
 const Contact = lazy(() => import("../components/Contact/Contact.tsx"));
 const Services = lazy(() => import("../components/Services/Services.tsx"));
 
