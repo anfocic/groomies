@@ -7,6 +7,7 @@ export default defineConfig({
     base: '',
     build: {
         outDir: 'dist',
-        minify: 'esbuild'
-    },
+        minify: 'esbuild',
+        cssCodeSplit: true,
+    }
 })

@@ -19,7 +19,7 @@ const Header = () => {
                 <picture>
                     <source srcSet="title.avif" type="image/avif"/>
                     <source srcSet="title.webp" type="image/webp"/>
-                    <img src="title.webp" height="300" width="300" alt="Logo"/>
+                    <img fetchPriority="high" src="title.webp" height="300" width="300" alt="Logo"/>
                 </picture>
             </a>
             <nav className="nav-links">
