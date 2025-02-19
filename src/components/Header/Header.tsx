@@ -39,6 +39,7 @@ const Header = () => {
                     <img src="sidebar.webp"
                          height="300"
                          width="300"
+                         loading="lazy"
                          alt="Logo"/>
                 </div>
 
