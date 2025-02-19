@@ -133,10 +133,10 @@ p, button, input, textarea {
 
 .footer-links .links-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 1.5rem; /* Space between columns */
-    max-width: 400px; /* Optional: Adjust width */
-    margin: 0 auto; /* Center align */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .contact-map iframe {
