@@ -1,14 +1,16 @@
 import Header from "../Header/Header.tsx";
-import {FC, lazy, PropsWithChildren} from "react";
+import { FC, lazy, PropsWithChildren, Suspense } from "react";
 
 const Footer = lazy(() => import("../Footer/Footer.tsx"));
 
-export const Layout: FC<PropsWithChildren> = ({children}) => {
+export const Layout: FC<PropsWithChildren> = ({ children }) => {
     return (
         <div>
-            <Header/>
+            <Header />
             {children}
-            <Footer/>
+            <Suspense fallback={<div>Loading footer...</div>}>
+                <Footer />
+            </Suspense>
         </div>
-    )
-}
+    );
+};
