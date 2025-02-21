@@ -1,8 +1,8 @@
 .hero {
     background: var(--cream);
-    display: flex; /* Align content horizontally */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-content {
@@ -118,7 +118,7 @@
 
     .hero-content {
         flex: 1;
-        padding-right: 2rem; /* Creates space between text and image */
+        padding-right: 2rem;
     }
 
     .hero-image {
@@ -127,6 +127,6 @@
 
     .hero-image img {
         border-radius: 50%;
-        max-width: 300px; /* Even bigger for desktop */
+        max-width: 300px;
     }
 }

@@ -38,11 +38,9 @@ const Contact = () => {
         const address = "673 River Forest, Leixlip, Co. Kildare, Ireland";
         const encodedAddress = encodeURIComponent(address);
 
-        // Check if the user is on iOS
         if (navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad")) {
             window.location.href = `https://maps.apple.com/?q=${encodedAddress}`;
         } else {
-            // Default to Google Maps for other devices
             window.location.href = `https://maps.google.com/?q=${encodedAddress}`;
         }
     };
