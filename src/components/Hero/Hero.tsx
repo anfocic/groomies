@@ -55,13 +55,13 @@ const Hero = () => {
                 <div className="hero-container">
                     <div className="hero-content">
                         <div className="hero-header">
-                            <h1 style={{color: '#4B3430'}}>
+                            <h1 style={{color: '#4B3430', fontSize: '2.2rem'}}>
                                 Welcome to Leixlip Dog Grooming
                             </h1>
                             <div className="hero-image">
                                 <img src="leixlip-dog-grooming-logo.webp"
                                      height="300"
-                                     width="300"
+                                     width="500"
                                      alt="Leixlip Dog Grooming logo featuring two happy Pomeranians"/>
                             </div>
                         </div>
