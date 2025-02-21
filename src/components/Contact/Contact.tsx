@@ -34,6 +34,19 @@ const Contact = () => {
         });
     };
 
+    const openMap = () => {
+        const address = "673 River Forest, Leixlip, Co. Kildare, Ireland";
+        const encodedAddress = encodeURIComponent(address);
+
+        // Check if the user is on iOS
+        if (navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad")) {
+            window.location.href = `https://maps.apple.com/?q=${encodedAddress}`;
+        } else {
+            // Default to Google Maps for other devices
+            window.location.href = `https://maps.google.com/?q=${encodedAddress}`;
+        }
+    };
+
     return (
         <section className="contact">
             <div className="contact-container">
@@ -73,13 +86,8 @@ const Contact = () => {
                             </p>
                             <p>
                                 <strong><FaLocationArrow/></strong>
-                                <a href="https://www.google.com/maps/search/?api=1&query=W23PY29"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    673 River Forest
-                                    Leixlip
-                                    Co. Kildare
-                                    W23 PY29
+                                <a href="#" onClick={openMap} className="address-link">
+                                    673 River Forest Leixlip, Co. Kildare W23 PY29
                                 </a>
                             </p>
                         </div>
@@ -92,7 +100,7 @@ const Contact = () => {
                         </div>
 
                         <div className="follow-us">
-                            <h3>Follow Us</h3>
+                        <h3>Follow Us</h3>
                             <a href="https://www.facebook.com/people/Leixlip-Dog-Grooming/61572547896118/"
                                target="_blank"
                                aria-label="Visit our Facebook profile"
