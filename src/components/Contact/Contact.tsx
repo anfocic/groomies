@@ -80,7 +80,7 @@ const Contact = () => {
                             <p><strong><FaPhone/></strong>
                                 <a href="tel:+353896072065"> +353 89 607 2065</a></p>
                             <p><strong><FaEnvelope/></strong>
-                                <a href="mailto:leixlipdoggrooming@gmail.com"> leixlipdoggrooming@gmail.com</a>
+                                <a href="mailto:booking@ldg.ie"> booking@ldg.ie</a>
                             </p>
                             <p>
                                 <strong><FaLocationArrow/></strong>

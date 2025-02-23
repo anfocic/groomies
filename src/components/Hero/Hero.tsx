@@ -9,7 +9,7 @@ const jsonLd = {
     "@id": "https://www.leixlip-dog-grooming.com/",
     "url": "https://www.leixlip-dog-grooming.com/",
     "telephone": "+353 89 607 2065",
-    "email": "leixlipdoggrooming@gmail.com",
+    "email": "booking@ldg.ie",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "673 River Forest",
