@@ -1,25 +1,5 @@
 Leixlip Dog Grooming – Responsive Website
 
-🐶 Overview
+A modern, mobile-first website built to showcase Leixlip Dog Grooming’s services and make appointment booking easy and intuitive. The site features responsive design, semantic HTML with ARIA for accessibility, and performance optimizations to support fast load times and strong SEO. Styled with clean CSS, the UI is both user-friendly and visually appealing across devices.
 
-A responsive, mobile-first website for Leixlip Dog Grooming, designed to showcase services and allow customers to book appointments easily.
-
- ✅ Responsive Design – Optimized for both desktop and mobile.
- ✅ Accessibility – Uses semantic HTML and ARIA labels.
- ✅ Fast Performance – Built with best practices for speed and SEO.
- ✅ Modern UI – Styled with CSS and designed for user-friendliness.
-
-
-🚀 Live Demo
-
-
-👉 Visit the Website: www.leixlip-dog-grooming.com
-
-🛠️ Next.js Version
-The project has been fully refactored in Next.js with improved performance and maintainability. This version is currently private and available upon request.
-
-🌟 Contributing
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-📄 License
-This project is open-source under the MIT License.
+The project was later refactored in Next.js to improve maintainability and performance, including enhanced routing, image optimization, and SEO. This updated version is private and available upon request. The original version is open-source and licensed under MIT.
